@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/button_find_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_host_game"
+        android:text="find game" />
+
+    <Button
+        android:id="@+id/button_host_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="host game" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/button_connect_peer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_find_game"
+        android:text="Connect to peer" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/button_send_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_connect_peer"
+        android:text="Send message" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/button_say_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button_host_game"
+        android:text="Say Hello!" />
+
+    <RelativeLayout
+        android:id="@+id/container_wait_for_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+    
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/textView_waiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/progressBar1"
+        android:text="Wait for server..."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    
+    
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/container_peers"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_hostgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_wait_for_server"
+        android:layout_centerHorizontal="true"
+        android:text="or Host game!" />
+
+</RelativeLayout>
